@@ -1,0 +1,52 @@
+- alias: 'Switch1 Controller off'
+  trigger:
+    platform: state
+    entity_id: switch.test_switch
+  condition:
+    condition: state
+    entity_id: switch.test_switch
+    state: 'on'
+  action:
+    - service: switch.turn_off
+      entity_id: switch.input0
+- alias: 'Switch1 Controller on'
+  trigger:
+    platform: state
+    entity_id: switch.test_switch
+  condition:
+    condition: state
+    entity_id: switch.test_switch
+    state: 'off'
+  action:
+    - service: switch.turn_on
+      entity_id: switch.input0
+- alias: 'Control sonoff device on'
+  trigger:
+    platform: state
+    entity_id: switch.test_switch
+  condition:
+    condition: state
+    entity_id: switch.test_switch
+    state: 'off'
+  action:
+    - service: switch.turn_on
+      entity_id: switch.sonoff_switch_1
+- alias: 'Control sonoff device off'
+  trigger:
+    platform: state
+    entity_id: switch.test_switch
+  condition:
+    condition: state
+    entity_id: switch.test_switch
+    state: 'on'
+  action:
+    - service: switch.turn_off
+      entity_id: switch.sonoff_switch_1
+- alias: 'Temperature over 20 on'
+  trigger:
+    platform: numeric_state
+    entity_id: switch.sensor_1
+    above: '20'
+  action:
+    - service: switch.turn_on
+      entity_id: switch.sonoff_switch_1

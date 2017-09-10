@@ -1,0 +1,39 @@
+  - platform: mqtt
+    name: "input0"
+    command_topic: "homeassistant/homienode1/led0/on/set"
+    state_topic: "homeassistant/homienode1/led0/on"
+    payload_on: "true"
+    payload_off: "false"
+  - platform: mqtt
+    name: "input1"
+    command_topic: "homeassistant/homienode1/led1/on/set"
+    state_topic: "homeassistant/homienode1/led1/on"
+    payload_on: "true"
+    payload_off: "false"
+  - platform: mqtt
+    name: "input2"
+    command_topic: "homeassistant/homienode1/led2/on/set"
+    state_topic: "homeassistant/homienode1/led2/on"
+    payload_on: "true"
+    payload_off: "false"
+  - platform: mqtt
+    name: "input3"
+    command_topic: "homeassistant/homienode1/led3/on/set"
+    state_topic: "homeassistant/homienode1/led3/on"
+    payload_on: "true"
+    payload_off: "false"
+  - platform: mqtt
+    name: "Test Switch"
+    command_topic: "homeassistant/homienode1/switch1/on/set"
+    state_topic: "homeassistant/homienode1/switch1/on"
+    payload_on: "true"
+    payload_off: "false"
+    qos: 1
+  - platform: mqtt
+    name: "Sonoff Switch 1"
+    command_topic: "homeassistant/sonoff1/led0/on/set"
+    state_topic: "homeassistant/sonoff1/led0/on"
+    payload_on: "true"
+    payload_off: "false"
+    qos: 1
+

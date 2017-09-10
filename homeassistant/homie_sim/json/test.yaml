@@ -1,0 +1,20 @@
+  - platform: mqtt
+  name: "/input0"
+  command_topic: homeassistant/homienode1/input0/on/set
+  payload_on: "true"
+  payload_off: "false"
+  - platform: mqtt
+  name: "/input1"
+  command_topic: homeassistant/homienode1/input1/on/set
+  payload_on: "true"
+  payload_off: "false"
+  - platform: mqtt
+  name: "/input2"
+  command_topic: homeassistant/homienode1/input2/on/set
+  payload_on: "true"
+  payload_off: "false"
+  - platform: mqtt
+  name: "/input3"
+  command_topic: homeassistant/homienode1/input3/on/set
+  payload_on: "true"
+  payload_off: "false"

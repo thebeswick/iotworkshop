@@ -1,0 +1,5 @@
+cover:
+  - platform: mqtt
+    name: "MQTT Cover"
+    state_topic: "home-assistant/cover"
+    command_topic: "home-assistant/cover/set"

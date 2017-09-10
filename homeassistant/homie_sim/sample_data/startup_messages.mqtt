@@ -1,0 +1,28 @@
+homeassistant/homienode1/$homie 2.0.0
+homeassistant/homienode1/$implementation esp8266
+homeassistant/homienode1/$mac 5C:CF:7F:0A:16:2A
+homeassistant/homienode1/switch0/$type switch
+homeassistant/homienode1/switch0/$properties on
+homeassistant/homienode1/switch1/$type switch
+homeassistant/homienode1/switch1/$properties on
+homeassistant/homienode1/led0/$type led
+homeassistant/homienode1/led0/$properties on:settable
+homeassistant/homienode1/led1/$type led
+homeassistant/homienode1/led1/$properties on:settable
+homeassistant/homienode1/led2/$type led
+homeassistant/homienode1/led2/$properties on:settable
+homeassistant/homienode1/led3/$type led
+homeassistant/homienode1/led3/$properties on:settable
+homeassistant/homienode1/$name Homie Node mk1
+homeassistant/homienode1/$localip 192.168.1.128
+homeassistant/homienode1/$stats/interval 60
+homeassistant/homienode1/$fw/name 2xswitch 4xLED
+homeassistant/homienode1/$fw/version 1.0.0
+homeassistant/homienode1/$fw/checksum 798edaded2883875cf5a55572cf2e4a3
+homeassistant/homienode1/$implementation/config {"name":"Homie Node mk1","device_id":"homienode1","wifi":{"ssid":"Myrtle_Magic"},"mqtt":{"host":"192.168.1.100","port":1883,"base_topic":"homeassistant/","auth":true},"ota":{"enabled":true},"settings":{}}
+homeassistant/homienode1/$implementation/version 2.0.0
+homeassistant/homienode1/$implementation/ota/enabled true
+homeassistant/homienode1/$online true
+homeassistant/homienode1/$stats/signal 68
+homeassistant/homienode1/$stats/uptime 7
+

@@ -1,0 +1,13 @@
+  - platform: mqtt
+    name: "Sensor 1"
+    state_topic: "homeassistant/sensor1/temperature"
+    unit_of_measurement: "°C"
+  - platform: mqtt
+    name: "Sensor 2"
+    state_topic: "homeassistant/sensor2/temperature"
+    unit_of_measurement: "°C"
+  - platform: bom
+    station: IDN60901.95766
+    name: Sydney
+    monitored_conditions:
+      - air_temp
